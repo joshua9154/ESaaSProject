@@ -1,9 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    async (2.2.1)
+    async (1.30.3)
       console (~> 1.10)
-      io-event (~> 1.1.0)
+      nio4r (~> 2.3)
       timers (~> 4.1)
     async-container (0.16.12)
       async
@@ -23,7 +23,7 @@ GEM
     async-pool (0.3.12)
       async (>= 1.25)
     build-environment (1.13.0)
-    console (1.16.2)
+    console (1.15.3)
       fiber-local
     falcon (0.42.3)
       async
@@ -38,9 +38,9 @@ GEM
       process-metrics (~> 0.2.0)
       protocol-rack (~> 0.1)
       samovar (~> 2.1)
-    ffi (1.15.5-x64-mingw-ucrt)
+    ffi (1.15.5-x64-mingw32)
+    ffi (1.15.5-x64-unknown)
     fiber-local (1.0.0)
-    io-event (1.1.2)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -88,7 +88,8 @@ GEM
     webrick (1.7.0)
 
 PLATFORMS
-  x64-mingw-ucrt
+  x64-mingw32
+  x64-unknown
 
 DEPENDENCIES
   falcon
